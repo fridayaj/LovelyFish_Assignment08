@@ -21,13 +21,34 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="holePackage\hole.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="holePackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="mainPackage\main.py" />
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="playerPackage\player.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="playerPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shotPackage\shot.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="shotPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="holePackage\" />
     <Folder Include="mainPackage\" />
+    <Folder Include="playerPackage\" />
+    <Folder Include="shotPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
